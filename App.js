@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { FlatList, Image } from "react-native";
+import { FlatList, Image, View } from "react-native";
 import {
   Header,
   H1,
@@ -21,7 +21,6 @@ export default class App extends Component {
 
     this.state = {
       data: [],
-      // imgOpen: false,
       activeUri: "",
       visible: false,
     };
@@ -75,14 +74,14 @@ export default class App extends Component {
     );
 
     const ImageComponent = (props) => (
-      <OpenImgComponent>
+      <View>
         <Image
           style={{ width: 300, height: 300 }}
           source={{
             uri: props.uri,
           }}
         />
-      </OpenImgComponent>
+      </View>
     );
 
     const renderItem = ({ item }) => (

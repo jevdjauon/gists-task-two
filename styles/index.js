@@ -51,8 +51,6 @@ export const Separator = styled.View`
   background-color: gray;
 `;
 
-export const OpenImgComponent = styled.View``;
-
 export const ModalContainer = styled.Modal`
   position: relative;
   width: 100%;
